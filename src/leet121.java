@@ -16,6 +16,16 @@ public class leet121 {
             }
         }
         return max_profit;
+    }
 
+    //gpt
+    public static int maxProfit1(int[] prices) {
+        int minPrice=Integer.MAX_VALUE;
+        int max_profit=0;
+        for (int price:prices) {
+            minPrice=Math.min(minPrice,price);
+            max_profit=Math.max(max_profit,price-minPrice);
+        }
+        return max_profit;
     }
 }
