@@ -9,7 +9,7 @@ public class leet374 {
 
         while (low<=high){
             int mid = low + (high - low) / 2; // avoid overflow
-            int res = guess(mid);
+            int res =0;  // guess(mid);
 
             if (res==0){
                 return mid;
